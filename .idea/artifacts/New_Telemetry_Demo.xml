@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="New Telemetry Demo">
+    <output-path>$PROJECT_DIR$/out/artifacts/New_Telemetry_Demo</output-path>
+    <root id="archive" name="New Telemetry Demo.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
