@@ -23,6 +23,8 @@ public class Main {
         // size the window
         int width = 192;
         int height = 144;
+        //int width = 100;
+        //int height = 100;
         Dimension size = new Dimension(width, height);
         window.setSize(size);
         Dimension resolution144p = new Dimension(192, 144);
