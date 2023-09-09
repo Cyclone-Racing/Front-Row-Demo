@@ -9,6 +9,7 @@ public class HorizontalPanel extends JPanel {
     private GroupLayout layout;
     private JButton buttonA;
     private JButton buttonB;
+    private JButton buttonC;
 
     private HorizontalPanel() {
         super();
@@ -32,8 +33,14 @@ public class HorizontalPanel extends JPanel {
             System.out.println(buttonB.getText());
         });
 
+        buttonC = new JButton("Not Henry's Work");
+        buttonC.addActionListener(event -> {
+            System.out.println(buttonC.getText());
+        });
+
         add(buttonA);
         add(buttonB);
+        add(buttonC);
 
         layout.setHorizontalGroup(
                 layout.createSequentialGroup()
@@ -41,11 +48,15 @@ public class HorizontalPanel extends JPanel {
                         .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED,
                                 GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(buttonB)
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED,
+                                GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(buttonC)
         );
 
         layout.setVerticalGroup(
                 layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                        .addGroup(layout.createParallelGroup(GroupLayout.Alignment.CENTER)
+                                .addComponent(buttonC)
                                 .addComponent(buttonA)
                                 .addComponent(buttonB)
                         )
